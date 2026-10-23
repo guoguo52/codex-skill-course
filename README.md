@@ -2,6 +2,14 @@
 
 一小时的入门科普与案例展示站，纯静态、零依赖、离线可打开。
 
+## 线上地址
+
+- 网站：https://guoguo52.github.io/codex-skill-course/
+- PPTX 课件：https://guoguo52.github.io/codex-skill-course/downloads/Codex-Skill-Course.pptx
+- PDF 讲义：https://guoguo52.github.io/codex-skill-course/downloads/Codex-Skill-Course.pdf
+
+托管在 GitHub Pages（免费、自带 HTTPS）。更新内容后推送 `main` 分支即可，约 1 分钟自动生效。
+
 ## 打开方式
 
 直接双击 `index.html` 即可。页面里的「打开目录」按钮用 `file://` 跳转，双击打开时可直接跳到本地案例目录。
@@ -23,7 +31,16 @@ codex-skill-course/
 ├─ styles.css    设计与动效
 ├─ data.js       案例与补充目录数据
 ├─ script.js     渲染、动效与交互
+├─ build-deck.cjs PPTX 生成脚本（node build-deck.cjs 重新生成）
+├─ downloads/     Codex-Skill-Course.pptx / .pdf（可编辑课件与讲义）
 └─ assets/cases/ 15 张案例封面（本地复制，可离线显示）
+```
+
+## 重新生成讲义
+
+```bash
+node build-deck.cjs            # 重新生成可编辑 PPTX
+# PDF 用 Chrome 打印生成：index.html?print=1
 ```
 
 ## 内容
